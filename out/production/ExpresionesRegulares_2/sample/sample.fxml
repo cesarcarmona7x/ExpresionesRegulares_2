@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -12,34 +13,49 @@
 
 <BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <center>
-      <GridPane alignment="CENTER" hgap="10" vgap="10">
-         <columnConstraints>
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints />
-            <RowConstraints />
-         </rowConstraints>
-         <children>
-            <Button mnemonicParsing="false" onAction="#comienzaEn_db" prefHeight="225.0" prefWidth="144.0" text="No comience con db" />
-            <Button mnemonicParsing="false" onAction="#terminaEn_count" prefHeight="225.0" prefWidth="144.0" text="Termine en count" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" onAction="#dosNombres" prefHeight="225.0" prefWidth="144.0" text="Dos nombres" GridPane.columnIndex="2" />
-            <Button mnemonicParsing="false" onAction="#macAddress" prefHeight="225.0" prefWidth="144.0" text="Dirección MAC" GridPane.columnIndex="3" />
-            <Button mnemonicParsing="false" onAction="#esPalabrA" prefHeight="225.0" prefWidth="144.0" text="PalabrA" GridPane.columnIndex="4" />
-            <Button mnemonicParsing="false" onAction="#binario8Digitos" prefHeight="225.0" prefWidth="144.0" text="Binario (8 dígitos)" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#hexadecimal0x" prefHeight="225.0" prefWidth="144.0" text="Hexadecimal (0x...)" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#operacion1Digito" prefHeight="225.0" prefWidth="144.0" text="Operación 1 dígito" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#numeroControl" prefHeight="225.0" prefWidth="144.0" text="No. de control ITSNCG" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#curp" prefHeight="225.0" prefWidth="144.0" text="CURP" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-         </children>
+      <ScrollPane>
          <BorderPane.margin>
             <Insets bottom="10.0" top="10.0" />
          </BorderPane.margin>
-      </GridPane>
+         <content>
+            <GridPane alignment="CENTER" hgap="10" vgap="10">
+               <columnConstraints>
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#comienzaEn_db" prefHeight="225.0" prefWidth="144.0" text="No comience con db" />
+                  <Button mnemonicParsing="false" onAction="#terminaEn_count" prefHeight="225.0" prefWidth="144.0" text="Termine en count" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#dosNombres" prefHeight="225.0" prefWidth="144.0" text="Dos nombres" GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#macAddress" prefHeight="225.0" prefWidth="144.0" text="Dirección MAC" GridPane.columnIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#esPalabrA" prefHeight="225.0" prefWidth="144.0" text="PalabrA" GridPane.columnIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#binario8Digitos" prefHeight="225.0" prefWidth="144.0" text="Binario (8 dígitos)" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#hexadecimal0x" prefHeight="225.0" prefWidth="144.0" text="Hexadecimal (0x...)" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#operacion1Digito" prefHeight="225.0" prefWidth="144.0" text="Operación 1 dígito" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#numeroControl" prefHeight="225.0" prefWidth="144.0" text="No. de control ITSNCG" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#curp" prefHeight="225.0" prefWidth="144.0" text="CURP" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#pesosMexicanos" prefHeight="225.0" prefWidth="144.0" text="Pesos mexicanos" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#tarjetaDeCredito" prefHeight="225.0" prefWidth="144.0" text="Tarjeta de crédito" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#etiquetaHTML" prefHeight="225.0" prefWidth="144.0" text="Etiqueta HTML" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#queryInsert" prefHeight="225.0" prefWidth="144.0" text="Query INSERT" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#ifDeVariable" prefHeight="225.0" prefWidth="144.0" text="if con una variable" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#fraseConNewline" prefHeight="225.0" prefWidth="144.0" text="Frase con salto de línea" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#colorHexadecimal" prefHeight="225.0" prefWidth="144.0" text="Color hex (#...)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#url" prefHeight="225.0" prefWidth="144.0" text="URL" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#videoDeYouTube" prefHeight="225.0" prefWidth="144.0" text="Video de YouTube" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+         </content>
+      </ScrollPane>
    </center>
    <bottom>
       <Label fx:id="lbResultado" prefHeight="50.0" text="Resultado" BorderPane.alignment="CENTER">
