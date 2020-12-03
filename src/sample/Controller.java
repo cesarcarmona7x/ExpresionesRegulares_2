@@ -128,4 +128,46 @@ public class Controller {
         Matcher matcher=patron.matcher(texto);
         lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
     }
+    public void nombreUsuario(ActionEvent event){
+        String texto=tfRegex.getText();
+        Pattern patron=Pattern.compile("^[a-z0-9_-]{3,16}$");
+        Matcher matcher=patron.matcher(texto);
+        lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
+    }
+    public void claveDeProducto(ActionEvent event){
+        String texto=tfRegex.getText();
+        Pattern patron=Pattern.compile("^[a-z0-9-]+$");
+        Matcher matcher=patron.matcher(texto);
+        lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
+    }
+    public void correoElectronico(ActionEvent event){
+        String texto=tfRegex.getText();
+        Pattern patron=Pattern.compile("^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$");
+        Matcher matcher=patron.matcher(texto);
+        lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
+    }
+    public void contrasena(ActionEvent event){
+        String texto=tfRegex.getText();
+        Pattern patron=Pattern.compile("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}");
+        Matcher matcher=patron.matcher(texto);
+        lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
+    }
+    public void colorRGB(ActionEvent event){
+        String texto=tfRegex.getText();
+        Pattern patron=Pattern.compile("[Rr][Gg][Bb][(](((([\\d]{1,3})[1,]{0,1})[\\s]*){3})[)]");
+        Matcher matcher=patron.matcher(texto);
+        lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
+    }
+    public void relojDe24Horas(ActionEvent event){
+        String texto=tfRegex.getText();
+        Pattern patron=Pattern.compile("^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$");
+        Matcher matcher=patron.matcher(texto);
+        lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
+    }
+    public void angulo(ActionEvent event){
+        String texto=tfRegex.getText();
+        Pattern patron=Pattern.compile("^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?),\\s*[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)");
+        Matcher matcher=patron.matcher(texto);
+        lbResultado.setText((matcher.matches())?"Sí cumple":"No cumple");
+    }
 }

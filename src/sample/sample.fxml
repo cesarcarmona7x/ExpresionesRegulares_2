@@ -31,6 +31,9 @@
                   <RowConstraints />
                   <RowConstraints />
                   <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
+                  <RowConstraints />
                </rowConstraints>
                <children>
                   <Button mnemonicParsing="false" onAction="#comienzaEn_db" prefHeight="225.0" prefWidth="144.0" text="No comience con db" />
@@ -52,6 +55,13 @@
                   <Button mnemonicParsing="false" onAction="#colorHexadecimal" prefHeight="225.0" prefWidth="144.0" text="Color hex (#...)" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Button mnemonicParsing="false" onAction="#url" prefHeight="225.0" prefWidth="144.0" text="URL" GridPane.columnIndex="2" GridPane.rowIndex="3" />
                   <Button mnemonicParsing="false" onAction="#videoDeYouTube" prefHeight="225.0" prefWidth="144.0" text="Video de YouTube" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#nombreUsuario" prefHeight="225.0" prefWidth="144.0" text="Nombre de usuario" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#claveDeProducto" prefHeight="225.0" prefWidth="144.0" text="Clave de producto" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#correoElectronico" prefHeight="225.0" prefWidth="144.0" text="Correo electrónico" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#contrasena" prefHeight="225.0" prefWidth="144.0" text="Contraseña" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#colorRGB" prefHeight="225.0" prefWidth="144.0" text="Color RGB(R,G,B)" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#relojDe24Horas" prefHeight="225.0" prefWidth="144.0" text="Reloj de 24 horas" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#angulo" prefHeight="225.0" prefWidth="144.0" text="Latitud y longitud" GridPane.columnIndex="2" GridPane.rowIndex="5" />
                </children>
             </GridPane>
          </content>
